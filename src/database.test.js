@@ -19,7 +19,7 @@ test('Create Person', async () => {
 test('Get Person', async () => {
     expect.assertions(2)
 
-    const person = await db.Person.findByPK(1)
+    const person = await db.Person.findByPk(1)
 
     expect(person.firstName).toEqual('Bobbie')
 
